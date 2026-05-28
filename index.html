@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070914" />
+    <meta name="description" content="Современный образовательный курс по созданию игр на Unreal Engine 5: Blueprint, персонажи, физика, уровни, UI и оптимизация." />
+    <meta name="keywords" content="Unreal Engine 5, UE5, разработка игр, Blueprint, gamedev, курс Unreal Engine, создание игр" />
+    <meta name="author" content="UE5 Game Academy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Создание игр на Unreal Engine 5" />
+    <meta property="og:description" content="Premium edtech-платформа для обучения разработке игр на Unreal Engine 5." />
+    <meta property="og:image" content="assets/og-preview.svg" />
+    <meta property="og:locale" content="ru_RU" />
+    <title>Создание игр на Unreal Engine 5 | GameDev Course</title>
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="%23070914"/><path d="M18 44V18h28v8H28v6h15v7H28v5h18v8H18z" fill="%2300e5ff"/><path d="M46 18 34 44h9l12-26h-9z" fill="%238b5cf6"/></svg>' />
+    <link rel="stylesheet" href="style.css?v=3" />
+  </head>
+  <body>
+    <div class="loader" aria-label="Загрузка сайта"><div class="loader__core"></div><span>Loading UE5 Academy</span></div>
+    <div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div><div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#hero" aria-label="UE5 Academy"><span class="brand__mark">U5</span><span class="brand__text">UE5 Academy</span></a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">О курсе</a><a href="#program">Лекции</a><a href="#practice">Практика</a><a href="#gallery">Галерея</a><a href="#videos">Видео</a><a href="#quiz">Тест</a><a href="#contacts">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <canvas class="particle-canvas" aria-hidden="true"></canvas>
+        <div class="hero__glow hero__glow--blue"></div><div class="hero__glow hero__glow--violet"></div>
+        <div class="hero__content reveal">
+          <p class="eyebrow">AAA GameDev Course • Unreal Engine 5</p>
+          <h1>Создание игр на Unreal Engine 5</h1>
+          <p class="hero__subtitle">Освойте Blueprint, персонажей, физику, уровни, UI и оптимизацию через практические задания в стиле профессиональной студии разработки.</p>
+          <div class="hero__actions"><a class="btn btn--primary" href="#program">Начать обучение</a><a class="btn btn--ghost" href="#gallery">Смотреть галерею</a></div>
+          <div class="hero__stats" aria-label="Показатели курса"><div><strong>6</strong><span>лекций</span></div><div><strong>8</strong><span>практик</span></div><div><strong>UE5</strong><span>pipeline</span></div></div>
+        </div>
+        <div class="hero__panel reveal parallax-card" data-depth="0.06" aria-label="Демо интерфейса Unreal Engine">
+          <div class="ue-window">
+            <div class="ue-window__top"><span></span><span></span><span></span><p>Level_Prototype.umap</p></div>
+            <div class="ue-window__body"><div class="ue-sidebar"><i></i><i></i><i></i><i></i></div><div class="ue-viewport"><div class="grid-floor"></div><div class="orbital"></div><div class="player-capsule"></div><div class="node node--one">Input</div><div class="node node--two">Blueprint</div><div class="node node--three">Event</div></div><div class="ue-details"><span></span><span></span><span></span><span></span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section__heading reveal"><p class="eyebrow">О курсе</p><h2>От первого проекта до мини-игры</h2><p>Курс построен как production-путь: короткие лекции, практические задания, визуальная логика, прототипирование, сборка игрового уровня и финальная полировка.</p></div>
+        <div class="feature-grid">
+          <article class="glass-card feature-card reveal"><span class="icon">⌬</span><h3>UE5 Workflow</h3><p>Интерфейс, контент-браузер, сцены, компоненты и структура игрового проекта.</p></article>
+          <article class="glass-card feature-card reveal"><span class="icon">⟡</span><h3>Blueprint Logic</h3><p>Визуальное программирование без лишнего шума: события, переменные и взаимодействия.</p></article>
+          <article class="glass-card feature-card reveal"><span class="icon">⚡</span><h3>Performance</h3><p>Оптимизация FPS, UI, освещение и финальные настройки для комфортной игры.</p></article>
+        </div>
+      </section>
+
+      <section class="section program" id="program">
+        <div class="section__heading reveal"><p class="eyebrow">Программа обучения</p><h2>6 больших профессиональных лекций</h2><p>Каждая лекция содержит теорию, пошаговые действия в Unreal Engine, визуальные схемы, Blueprint-примеры, code blocks, ошибки новичков и итоговый результат.</p></div>
+        <div class="learning-path reveal">
+          <span>Setup</span><i></i><span>Blueprint</span><i></i><span>Character</span><i></i><span>Physics</span><i></i><span>Level</span><i></i><span>UI & FPS</span>
+        </div>
+        <div class="lecture-grid lecture-grid--detailed" id="lectureGrid"></div>
+      </section>
+
+      <section class="section practice" id="practice">
+        <div class="section__heading reveal"><p class="eyebrow">Практические задания</p><h2>8 реалистичных студийных практик</h2><p>В каждой практике есть цель, пошаговое выполнение, настройки проекта, Blueprint-логика, чеклист, возможные ошибки, проверка результата и итоговый артефакт.</p></div>
+        <div class="course-progress glass-card reveal">
+          <div><strong id="overallProgress">0%</strong><span>общий прогресс практик</span></div>
+          <div class="mega-progress"><span id="overallProgressBar"></span></div>
+          <p>Отмечайте пункты чеклистов: прогресс, бейджи завершения и статус практики обновляются автоматически.</p>
+        </div>
+        <div class="practice-grid practice-grid--detailed" id="practiceGrid"></div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="section__heading reveal"><p class="eyebrow">Интерактивная галерея</p><h2>Проекты, сцены и Blueprint-системы</h2><p>Фильтруйте материалы по категориям, открывайте fullscreen preview и изучайте fake screenshots в стиле интерфейса Unreal Engine.</p></div>
+        <div class="filter-row reveal" id="galleryFilters"></div>
+        <div class="gallery-grid gallery-grid--interactive" id="projectGallery"></div>
+      </section>
+
+      <section class="section videos" id="videos">
+        <div class="section__heading reveal"><p class="eyebrow">Видеообучение</p><h2>Подборка обучающих роликов UE5</h2><p>Preview cards открывают встроенный видеоплеер в модальном окне. Подборка помогает закрепить лекции визуальными примерами.</p></div>
+        <div class="video-grid" id="videoGrid"></div>
+      </section>
+
+      <section class="section quiz" id="quiz">
+        <div class="section__heading reveal"><p class="eyebrow">Проверка знаний</p><h2>Финальный тест из 20 вопросов</h2><p>Ответьте на вопросы по интерфейсу UE5, Blueprint, персонажу, физике, уровням, UI и оптимизации. После завершения сайт покажет баллы, процент, уровень знаний и рекомендации.</p></div>
+        <div class="quiz-shell glass-card reveal">
+          <div class="quiz-top"><span id="quizStep">Вопрос 1 / 20</span><span id="quizDifficulty">Beginner</span></div>
+          <div class="mega-progress quiz-progress"><span id="quizProgressBar"></span></div>
+          <h3 id="quizQuestion"></h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <div class="quiz-actions"><button type="button" class="card-button" id="quizNext">Следующий вопрос</button><button type="button" class="card-button" id="quizRestart">Пройти заново</button></div>
+          <div class="quiz-result" id="quizResult"></div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section__heading reveal"><p class="eyebrow">FAQ</p><h2>Частые вопросы</h2></div>
+        <div class="faq-list reveal"><details open><summary>Нужен ли опыт программирования?</summary><p>Нет. Курс начинается с основ UE5 и использует Blueprint как визуальную систему логики.</p></details><details><summary>Подойдёт ли курс для новичка?</summary><p>Да. Материал идёт от установки и навигации до финального мини-проекта.</p></details><details><summary>Можно ли разместить сайт на GitHub Pages?</summary><p>Да. Проект состоит из статических файлов и работает без сборки.</p></details><details><summary>Какая версия Unreal Engine нужна?</summary><p>Рекомендуется Unreal Engine 5.x, чтобы интерфейс и инструменты соответствовали программе.</p></details></div>
+      </section>
+
+      <section class="section contacts" id="contacts"><div class="contact-card glass-card reveal"><div><p class="eyebrow">Контакты</p><h2>Готовы собрать свою первую игру?</h2><p>Оставьте заявку на обучение или используйте этот блок для контактов вашей школы.</p></div><form class="contact-form"><input type="text" placeholder="Ваше имя" aria-label="Ваше имя" /><input type="email" placeholder="Email" aria-label="Email" /><button class="btn btn--primary" type="submit">Отправить заявку</button></form></div></section>
+    </main>
+
+    <footer class="footer"><div><strong>UE5 Academy</strong><p>Premium-платформа для обучения разработке игр на Unreal Engine 5.</p></div><div class="footer__links"><a href="#about">О курсе</a><a href="#program">Программа</a><a href="#contacts">Контакты</a></div></footer>
+    <button class="to-top" type="button" aria-label="Наверх"><span>↑</span></button>
+    <div class="modal" aria-hidden="true" role="dialog" aria-modal="true"><div class="modal__content glass-card"><button class="modal__close" type="button" aria-label="Закрыть">×</button><p class="eyebrow">Детали лекции</p><h3 class="modal__title"></h3><div class="modal__text"></div></div></div>
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
+
+
